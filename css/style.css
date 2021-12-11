@@ -1,3 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;600&display=swap");
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.menu__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #1FC7FF;
+}
+
+.menu__item {
+  border-bottom: 1px solid white;
+}
+
+.menu__link {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu__link:hover {
+  background-color: #23baec;
+}
+
+@media screen and (max-width: 799px) {
+  .menu__checkbox:checked ~ .menu__list {
+    display: block;
+  }
+}
+@media screen and (min-width: 800px) {
+  .menu__toggler {
+    display: none;
+  }
+
+  .menu__list {
+    display: flex;
+  }
+
+  .menu__item {
+    border-bottom: 0;
+    border-right: 1px solid white;
+  }
+}
+.footer {
+  display: grid;
+  background-color: #AEADAD;
+  border: 1px solid #1FC7FF;
+}
+
 h1 {
   color: #1FC7FF;
+  text-align: center;
+}
+
+body {
+  font-family: "Readex Pro";
+  background-color: #FAFAFA;
+}
+
+.header {
+  display: flex;
+}
+.header__logo {
+  width: 200px;
+}
+
+.gallery__image {
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */

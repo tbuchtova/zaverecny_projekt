@@ -4,10 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kreativní kavárna</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Kavárna Papírový šálek</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Můj závěrečný projekt kreativní kavárny</h1>
+    <header class="header">
+        <div class="header__logo">
+            <img src="/images/logotyp_papirovy-salek_logotype_black.svg" alt="Papírový šálek">
+        </div>
+
+        <nav class="menu">
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+
+            <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+
+            <ul class="menu__list">
+                <li class="menu__item"><a href="/" class="menu__link">Úvod</a></li>
+                <li class="menu__item"><a href="/o_nas/" class="menu__link">O nás</a></li>
+                <li class="menu__item"><a href="/kalendar_akci/" class="menu__link">Kalendář akcí</a></li>
+                <li class="menu__item"><a href="/stale_menu/" class="menu__link">Stálé menu</a></li>
+                <li class="menu__item"><a href="/e-shop/" class="menu__link">E-shop</a></li>
+                <li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+
+        <h1>Vítejte na stránkách kreativní kavárny</h1>
+
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nemo magni, consectetur, natus molestias asperiores culpa ducimus explicabo ab sint beatae autem quaerat doloremque! Officia, dicta? Inventore harum sapiente unde. </p>
+
+        <p> Aperiam, totam placeat aut veniam quaerat quod eos similique? Dolores quae necessitatibus esse tempora. Sint iste ipsum ratione exercitationem hic atque at in modi dolore nemo, porro asperiores maxime doloribus! </p>
+        
+        <p> Deserunt error, omnis repudiandae fuga praesentium, maxime illo amet neque et dolore minima! Voluptas doloribus corrupti repellat iure. Consectetur, quibusdam. Quod sequi architecto tempore voluptates possimus eum ullam perspiciatis similique.</p>
+
+        <section class="gallery--uvod">
+            <div class="grid__column">
+                <img class="gallery__image" src="/images/coffee_salek1.jpg" alt="Šálek kávy">
+            </div>
+
+            <div class="grid__column">
+                <img class="gallery__image" src="/images/coffee3.jpg" alt="Káva">
+            </div>
+
+            <div class="grid__column">
+                <img class="gallery__image" src="/images/journal_yellow.jpg" alt="Diáře">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+       <div class="footer__grid">
+           <div class="footer__grid-column">
+           <p>
+               <span class="footer__title">Adresa:</span><br>
+               Kávová 12/3, Papírové město
+           </p>
+           <p>
+               <span class="footer__title">Telefon:</span><br>
+               +420 123 456 789
+           </p>
+           <p>
+               <span class="footer__title">E-mail:</span><br>
+               <a href="mailto:papirovy@salek.cz">papirovy@salek.cz</a>
+           </p>
+       </div>
+   </div>
+
+   <div class="footer__copyright">
+       &copy; 2021, Tereza Plecitá
+   </div>
+
+   </footer>
+   
 </body>
 </html>

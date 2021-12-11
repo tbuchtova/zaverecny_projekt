@@ -1,5 +1,28 @@
 @use 'colors';
+@use 'navigation';
+@use 'footer';
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;600&display=swap');
+
 
 h1 {
     color: colors.$c-primary;
+    text-align: center;
 }
+
+body {
+    font-family: "Readex Pro";
+    background-color: colors.$c-secondary;
+}
+
+.header {
+    display: flex;
+    
+    &__logo {
+        width: 200px;
+    }
+}
+
+.gallery__image {
+    max-width: 100%;
+}
+

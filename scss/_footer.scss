@@ -1,0 +1,7 @@
+@use 'colors';
+
+.footer {
+    display: grid;
+    background-color: colors.$c-gray;
+    border: 1px solid colors.$c-primary;
+}
