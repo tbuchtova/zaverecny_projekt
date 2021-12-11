@@ -1,7 +1,40 @@
 @use 'colors';
+@use 'basic';
 
 .footer {
-    display: grid;
-    background-color: colors.$c-gray;
-    border: 1px solid colors.$c-primary;
+    margin-top: 50px;
+    background-color: black;
+    color: colors.$c-gray;
+    padding: basic.$rozestup;
+
+
+    a {
+        color: colors.$c-gray;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 33.333%);
+        gap: basic.$rozestup;
+    }
+
+    &__copyright {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    
+    .footer {
+        &__grid {
+            justify-items: center;
+            gap: 0;
+        }
+
+        &__grid--column {
+            text-align: center;
+        }
+    }
 }

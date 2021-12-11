@@ -28,9 +28,21 @@
     background-color: #23baec;
 }
 
+.menu__toggler {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
 @media screen and (max-width: 799px) {
     .menu__checkbox:checked ~ .menu__list {
         display: block;
+    }
+
+    .menu__list {
+        position: absolute;
+        margin-top: 15px;
+        right: 15px;
     }
 }
 

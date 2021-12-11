@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavárna Papírový šálek</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo--mobile" src="/images/logotyp_papirovy-salek_logo_black.svg" alt="Papírový šálek">
+            <img class="header__logo--desktop" src="/images/logotyp_papirovy-salek_logotype_black.svg" alt="Papírový šálek">
+        </div>
+        
+        <nav class="menu">
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+
+            <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+
+            <ul class="menu__list">
+                <li class="menu__item"><a href="/" class="menu__link">Úvod</a></li>
+                <li class="menu__item"><a href="/o_nas/" class="menu__link">O nás</a></li>
+                <li class="menu__item"><a href="/kalendar_akci/" class="menu__link">Kalendář akcí</a></li>
+                <li class="menu__item"><a href="/stale_menu/" class="menu__link">Stálé menu</a></li>
+                <li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+
+    {{ content | safe }}
+
+    </main>
+
+    <footer class="footer">
+       <div class="footer__grid">
+           <div class="footer__grid--column">
+                <p>
+                    <span class="footer__title">Adresa:</span>
+                    Kávová 12/3, Papírové město
+                </p>
+            </div>
+           <div class="footer__grid--column">
+                <p>
+                    <span class="footer__title">Telefon:</span>
+                    +420 123 456 789
+                </p>
+            </div>
+           <div class="footer__grid--column">
+                <p>
+                    <span class="footer__title">E-mail:</span>
+                    <a href="mailto:papirovy@salek.cz">papirovy@salek.cz</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            &copy; 2021, Tereza Plecitá
+        </div>
+
+   </footer>
+   
+</body>
+</html>

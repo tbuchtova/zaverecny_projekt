@@ -27,9 +27,21 @@
   background-color: #23baec;
 }
 
+.menu__toggler {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
 @media screen and (max-width: 799px) {
   .menu__checkbox:checked ~ .menu__list {
     display: block;
+  }
+
+  .menu__list {
+    position: absolute;
+    margin-top: 15px;
+    right: 15px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -46,29 +58,102 @@
     border-right: 1px solid white;
   }
 }
-.footer {
-  display: grid;
-  background-color: #AEADAD;
-  border: 1px solid #1FC7FF;
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
 }
 
 h1 {
   color: #1FC7FF;
   text-align: center;
+  font-weight: 600;
 }
 
+.footer {
+  margin-top: 50px;
+  background-color: black;
+  color: #AEADAD;
+  padding: 15px;
+}
+.footer a {
+  color: #AEADAD;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+  gap: 15px;
+}
+.footer__copyright {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__grid {
+    justify-items: center;
+    gap: 0;
+  }
+  .footer__grid--column {
+    text-align: center;
+  }
+}
 body {
+  margin: 0;
   font-family: "Readex Pro";
-  background-color: #FAFAFA;
+}
+
+.main {
+  padding: 15px;
 }
 
 .header {
+  border-bottom: 1px solid #1FC7FF;
+  padding: 15px;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .header__logo {
-  width: 200px;
+  width: 70px;
 }
 
+@media screen and (max-width: 799px) {
+  .header__logo--desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .header__logo--mobile {
+    display: none;
+  }
+
+  .header {
+    display: block;
+  }
+  .header__logo {
+    width: 100%;
+  }
+  .header__logo--desktop {
+    margin: 0 auto;
+    width: 150px;
+  }
+
+  section {
+    max-width: 1040px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    align-items: center;
+  }
+
+  .gallery--uvod {
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%);
+    gap: 10px;
+  }
+}
 .gallery__image {
   max-width: 100%;
 }/*# sourceMappingURL=style.css.map */
