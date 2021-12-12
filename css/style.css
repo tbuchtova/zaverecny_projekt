@@ -272,6 +272,61 @@ p a:hover {
     transform: scale(1.1);
   }
 }
+.contact {
+  text-align: center;
+}
+
+.contact__grid {
+  display: grid;
+  gap: 15px;
+}
+
+.contact__title {
+  margin-top: 30px;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  display: block;
+  color: black;
+  font-size: 15px;
+  margin-bottom: 7.5px;
+}
+
+.form-field :is(input, textarea, select) {
+  width: 100%;
+  padding: 7.5px;
+  border: 1px solid #AEADAD;
+  border-radius: 4px;
+}
+
+.required:after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
+
+.button {
+  padding: 7.5px 30px;
+  color: white;
+  background-color: #1FC7FF;
+  font-size: 1rem;
+  border: 1px solid #1FC7FF;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .contact {
+    text-align: left;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 body {
   margin: 0;
   font-family: "Readex Pro";

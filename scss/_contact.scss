@@ -1,0 +1,59 @@
+@use 'colors';
+@use 'basic';
+
+.contact {
+	text-align: center;
+}
+
+.contact__grid {
+	display: grid;
+	gap: basic.$rozestup;
+}
+
+.contact__title {
+	margin-top: 2*basic.$rozestup;
+}
+
+.form-field {
+	margin-bottom: basic.$rozestup;
+}
+
+.form-field label {
+	display: block;
+	color: black;
+	font-size: 15px;
+	margin-bottom: (basic.$rozestup)/2;
+}
+
+.form-field :is(input, textarea, select) {
+	width: 100%;
+	padding: (basic.$rozestup)/2;
+	border: 1px solid (colors.$c-gray);
+	border-radius: 4px;
+}
+
+.required:after {
+	content: "*";
+	color: red;
+	margin-left: 4px;
+}
+
+.button {
+	padding: (basic.$rozestup)/2 2*(basic.$rozestup);
+	color: white;
+	background-color: colors.$c-primary;
+	font-size: 1rem;
+	border: 1px solid colors.$c-primary;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+
+	.contact {
+		text-align: left;
+	}
+
+	.contact__grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
