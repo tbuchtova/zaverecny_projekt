@@ -5,24 +5,10 @@
 @use 'header';
 @use 'calendar';
 @use 'contact';
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;600&display=swap');
 
 
-body {
-    margin: 0;
-    font-family: "Readex Pro";
-}
 
-.main {
-    padding: basic.$rozestup;
-}
 
-section {
-    max-width: 1040px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    align-items: center;
-    }
 
 .gallery--uvod {
     display: grid;
@@ -44,9 +30,7 @@ section {
     grid-row-start: 2;
 }
 
-.highlight {
-    color: colors.$c-primary;
-}
+
 
 @media screen and (min-width: 800px) {
 
