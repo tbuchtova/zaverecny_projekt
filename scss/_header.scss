@@ -1,0 +1,48 @@
+@use 'colors';
+@use 'basic';
+
+.header {
+    border-bottom: 1px solid (colors.$c-primary);
+    background-image: url("/images/coffee_background.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    padding: basic.$rozestup;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+   
+        &__logo--mobile {
+            width: 70px;
+            background-color: white;
+            border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .header__logo--desktop {
+    display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .header {
+        display: block;
+        border-bottom: none;
+        padding: 0;
+
+        &__logo--mobile {
+            display: none;
+        }
+
+        &__logo {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__logo--desktop {
+            width: 150px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    }
+}

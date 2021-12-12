@@ -2,6 +2,7 @@
 @use 'navigation';
 @use 'footer';
 @use 'basic';
+@use 'header';
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;600&display=swap');
 
 
@@ -14,54 +15,17 @@ body {
     padding: basic.$rozestup;
 }
 
-.header {
-    border-bottom: 1px solid (colors.$c-primary);
-    padding: basic.$rozestup;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-   
-        &__logo {
-            width: 70px;
-    }
-}
-
-@media screen and (max-width: 799px) {
-    .header__logo--desktop {
-    display: none;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    .header__logo--mobile {
-    display: none;
+section {
+    max-width: 1040px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    align-items: center;
     }
 
-    .header {
-        display: block;
-
-        &__logo {
-            width: 100%;
-        }
-
-        &__logo--desktop {
-            margin: 0 auto;
-            width: 150px;
-        }
-    }
-
-    section {
-        max-width: 1040px;
-        margin: 0 auto;
-        margin-bottom: 80px;
-        align-items: center;
-    }
-
-    .gallery--uvod {
-        display: grid;
-        grid-template-columns: repeat(3, 33.333%);
-        gap: 10px;
-    }
+.gallery--uvod {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
 }
 
 
