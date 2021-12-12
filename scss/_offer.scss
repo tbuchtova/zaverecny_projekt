@@ -1,0 +1,36 @@
+@use 'colors';
+@use 'basic';
+
+table {
+    width: 100%;
+}
+
+tr td:first-child {
+    padding-left: 40px;
+    width: 50%;
+    text-align: left;
+}
+
+tr td:last-child {
+    text-align: right;
+    width: 50%;
+    padding-right: 40px;
+}
+
+@media screen and (min-width: 800px) {
+    .drinks,
+    .food {
+        display: grid;
+        gap: 2*basic.$rozestup;
+        grid-template-columns: repeat(2, auto);
+        align-items: start;
+    }
+
+    tr td:first-child {
+        padding-left: 0;
+    }
+
+    tr td:last-child {
+        padding-right: 0;
+    }
+}
