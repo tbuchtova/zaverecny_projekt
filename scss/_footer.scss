@@ -14,13 +14,17 @@
     }
 
     &__logo {
-        color: colors.$c-gray;
-        width: 40px;
+        margin: basic.$rozestup;
+        width: 55px;
+    }
+
+    &__p {
+        font-size: 16px;
     }
 
     a {
         color: colors.$c-gray;
-    }
+    }    
 }
 
 @media screen and (min-width: 800px) {

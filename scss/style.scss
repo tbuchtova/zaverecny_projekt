@@ -28,8 +28,39 @@ section {
     gap: 5px;
 }
 
+.gallery--onas {
+    display: grid;
+    text-align: center;
+}
+
 
 .gallery__image {
     max-width: 100%;
+}
+
+.grid__column--opening {
+    grid-row-start: 2;
+}
+
+.highlight {
+    color: colors.$c-primary;
+}
+
+@media screen and (min-width: 800px) {
+
+    .gallery--onas {
+        grid-template-columns: repeat(3, auto);
+        gap: basic.$rozestup;
+    }
+
+    .grid__column--text {
+        text-align: left;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .grid__column--opening {
+        grid-column-start: 2;
+    }
 }
 

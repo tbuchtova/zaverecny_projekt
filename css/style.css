@@ -85,6 +85,31 @@ h1 {
   font-size: 36px;
 }
 
+h2 {
+  color: #AEADAD;
+  font-size: 25px;
+}
+
+p {
+  font-size: 19px;
+}
+
+p a {
+  color: black;
+}
+
+p a:visited {
+  color: black;
+}
+
+p a:focus {
+  color: #1FC7FF;
+}
+
+p a:hover {
+  color: #1FC7FF;
+}
+
 .footer {
   margin-top: 50px;
   background-color: black;
@@ -97,8 +122,11 @@ h1 {
   text-align: center;
 }
 .footer__logo {
-  color: #AEADAD;
-  width: 40px;
+  margin: 15px;
+  width: 55px;
+}
+.footer__p {
+  font-size: 16px;
 }
 .footer a {
   color: #AEADAD;
@@ -116,7 +144,6 @@ h1 {
   }
 }
 .header {
-  border-bottom: 1px solid #1FC7FF;
   background-image: url("/images/coffee_background.jpg");
   background-repeat: repeat;
   background-size: contain;
@@ -151,6 +178,7 @@ h1 {
   }
   .header__logo--desktop {
     width: 150px;
+    margin: 15px;
     background-color: white;
     border-radius: 50%;
   }
@@ -177,6 +205,36 @@ section {
   gap: 5px;
 }
 
+.gallery--onas {
+  display: grid;
+  text-align: center;
+}
+
 .gallery__image {
   max-width: 100%;
+}
+
+.grid__column--opening {
+  grid-row-start: 2;
+}
+
+.highlight {
+  color: #1FC7FF;
+}
+
+@media screen and (min-width: 800px) {
+  .gallery--onas {
+    grid-template-columns: repeat(3, auto);
+    gap: 15px;
+  }
+
+  .grid__column--text {
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .grid__column--opening {
+    grid-column-start: 2;
+  }
 }/*# sourceMappingURL=style.css.map */

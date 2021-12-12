@@ -11,3 +11,28 @@ h1 {
     font-weight: 600;
     font-size: 36px;
 }
+
+h2 {
+    color: colors.$c-gray;
+    font-size: 25px;
+}
+
+p {
+    font-size: 19px;
+}
+
+p a {
+    color: black;
+}
+
+p a:visited {
+    color: black;
+}
+
+p a:focus {
+    color: colors.$c-primary;
+}
+p a:hover {
+    color: colors.$c-primary;
+}
+
