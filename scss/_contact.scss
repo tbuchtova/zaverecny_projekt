@@ -47,6 +47,10 @@
 	cursor: pointer;
 }
 
+.map {
+	margin-top: basic.$rozestup;
+}
+
 @media screen and (min-width: 800px) {
 	.contact {
 		text-align: left;
