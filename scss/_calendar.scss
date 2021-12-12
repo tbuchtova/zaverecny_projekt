@@ -1,0 +1,85 @@
+@use 'colors';
+@use 'basic';
+
+
+.gallery--calendar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid__column--calendar {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.calendar__image {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.workshop__description {
+    padding: 5px;
+    background-color: colors.$c-accent;
+    color: black;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.workshop__description p {
+    margin: 0;
+}
+
+@media screen and (max-width: 799px){
+
+    .workshop__description {
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .gallery--calendar {
+        grid-template-columns: repeat(3, 1fr);
+        gap: basic.$rozestup;
+    }
+
+    .grid__column--calendar {
+        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .calendar__image {
+        transition: transform 0.5s;
+    }
+
+    .workshop__description {
+        padding: 10px;
+        background-color: colors.$c-accent;
+        color: black;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        transition: transform 0.5s;
+    }
+
+    .workshop__description a {
+        color: white;
+    }
+
+    .grid__column--calendar:hover .workshop__description {
+        transform: translateY(-100%);
+    }
+
+    .grid__column--calendar:hover .calendar__image {
+        transform: scale(1.1);
+    }
+
+}

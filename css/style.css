@@ -10,6 +10,7 @@
   padding: 0;
   list-style: none;
   background-color: #1FC7FF;
+  z-index: 10;
 }
 
 .menu__item {
@@ -88,6 +89,15 @@ h1 {
 h2 {
   color: #AEADAD;
   font-size: 25px;
+}
+
+h3 {
+  background-color: #1FC7FF;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin: 15px auto;
+  max-width: 1040px;
 }
 
 p {
@@ -181,6 +191,85 @@ p a:hover {
     margin: 15px;
     background-color: white;
     border-radius: 50%;
+  }
+}
+.gallery--calendar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid__column--calendar {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.calendar__image {
+  display: block;
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.workshop__description {
+  padding: 5px;
+  background-color: #FCFF4B;
+  color: black;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.workshop__description p {
+  margin: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .workshop__description {
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .gallery--calendar {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .grid__column--calendar {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .calendar__image {
+    transition: transform 0.5s;
+  }
+
+  .workshop__description {
+    padding: 10px;
+    background-color: #FCFF4B;
+    color: black;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    transition: transform 0.5s;
+  }
+
+  .workshop__description a {
+    color: white;
+  }
+
+  .grid__column--calendar:hover .workshop__description {
+    transform: translateY(-100%);
+  }
+
+  .grid__column--calendar:hover .calendar__image {
+    transform: scale(1.1);
   }
 }
 body {

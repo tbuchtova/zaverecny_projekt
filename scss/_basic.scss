@@ -17,6 +17,15 @@ h2 {
     font-size: 25px;
 }
 
+h3 {
+    background-color: colors.$c-primary;
+    color: white;
+    padding: $rozestup;
+    text-align: center;
+    margin: $rozestup auto;
+    max-width: 1040px;
+}
+
 p {
     font-size: 19px;
 }
