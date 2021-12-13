@@ -1,0 +1,22 @@
+@use 'colors';
+@use 'basic';
+@use 'contact';
+
+.hero {
+    margin-top: basic.$rozestup;
+    height: 250px;
+    max-width: 1040px;
+    background-image: url("/images/hero_image_coffee.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &__text {
+        width: 100%;
+        position: absolute;
+    }
+
+    &__text--nadpis {
+        background-color: white;
+    }
+}

@@ -213,7 +213,7 @@ p a:hover {
   }
 }
 .header {
-  background-image: url("/images/coffee_background.jpg");
+  background-image: url("/images/coffee_background_resize.jpg");
   background-repeat: repeat;
   background-size: contain;
   padding: 15px;
@@ -419,4 +419,20 @@ tr td:last-child {
   tr td:last-child {
     padding-right: 0;
   }
+}
+.hero {
+  margin-top: 15px;
+  height: 250px;
+  max-width: 1040px;
+  background-image: url("/images/hero_image_coffee.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.hero__text {
+  width: 100%;
+  position: absolute;
+}
+.hero__text--nadpis {
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
