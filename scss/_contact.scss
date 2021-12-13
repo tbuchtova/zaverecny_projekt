@@ -3,15 +3,15 @@
 
 .contact {
 	text-align: center;
-}
 
-.contact__grid {
-	display: grid;
-	gap: basic.$rozestup;
-}
+	&__grid {
+		display: grid;
+		gap: basic.$rozestup;
+	}
 
-.contact__title {
-	margin-top: 2*basic.$rozestup;
+	&__title {
+		margin-top: 2*basic.$rozestup;
+	}
 }
 
 .form-field {
@@ -21,7 +21,7 @@
 .form-field label {
 	display: block;
 	color: black;
-	font-size: 15px;
+	font-size: basic.$rozestup;
 	margin-bottom: (basic.$rozestup)/2;
 }
 
@@ -54,9 +54,9 @@
 @media screen and (min-width: 800px) {
 	.contact {
 		text-align: left;
-	}
 
-	.contact__grid {
-		grid-template-columns: 1fr 1fr;
+		&__grid {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 }

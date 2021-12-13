@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kavárna Papírový šálek</title>
+    <title> {{title}} </title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/images/logotyp_papirovy-salek_logo_black.svg" type="image/x-icon">  
 </head>
@@ -21,11 +21,11 @@
             <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
 
             <ul class="menu__list">
-                <li class="menu__item"><a href="/" class="menu__link">Úvod</a></li>
-                <li class="menu__item"><a href="/o_nas/" class="menu__link">O nás</a></li>
-                <li class="menu__item"><a href="/kalendar_akci/" class="menu__link">Kalendář akcí</a></li>
-                <li class="menu__item"><a href="/stale_menu/" class="menu__link">Stálé menu</a></li>
-                <li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+                <li class="menu__item {{active_uvod}}"><a href="/" class="menu__link">Úvod</a></li>
+                <li class="menu__item {{active_onas}}"><a href="/o_nas/" class="menu__link">O nás</a></li>
+                <li class="menu__item {{active_kalendar}}"><a href="/kalendar_akci/" class="menu__link">Kalendář akcí</a></li>
+                <li class="menu__item {{active_nabidka}}"><a href="/stale_menu/" class="menu__link">Stálé menu</a></li>
+                <li class="menu__item {{active_kontakt}}"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
             </ul>
         </nav>
     </header>

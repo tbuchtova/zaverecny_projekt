@@ -11,6 +11,7 @@
     &__copyright {
         display: block;
         text-align: center;
+        font-size: basic.$rozestup;
     }
 
     &__logo {
@@ -19,7 +20,7 @@
     }
 
     &__p {
-        font-size: 16px;
+        font-size: basic.$rozestup;
     }
 
     a {
