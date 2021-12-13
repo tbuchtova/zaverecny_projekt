@@ -5,10 +5,8 @@
 .hero {
     margin-top: basic.$rozestup;
     height: 250px;
-    max-width: 1040px;
-    background-image: url("/images/hero_image_coffee.jpg");
-    background-position: center;
-    background-size: cover;
+    max-width: basic.$desktop-width;
+    background: url("/images/hero_image_coffee.jpg") center / cover;
     position: relative;
 
     &__text {
