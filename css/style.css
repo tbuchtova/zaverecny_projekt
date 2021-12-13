@@ -105,11 +105,6 @@ p a:hover {
   .grid__column--opening {
     grid-column-start: 2;
   }
-
-  .active {
-    border-bottom: 5px solid #1FC7FF;
-    margin-bottom: -10px;
-  }
 }
 .menu__checkbox {
   position: absolute;
@@ -173,6 +168,11 @@ p a:hover {
   }
   .menu__item:first-child {
     border-left: 1px solid white;
+  }
+
+  .active {
+    border-bottom: 5px solid #1FC7FF;
+    margin-bottom: -10px;
   }
 }
 .footer {

@@ -1,6 +1,7 @@
 @use 'colors';
 @use 'basic';
 
+
 .menu {
     &__checkbox {
         position: absolute;
@@ -75,5 +76,10 @@
         &__item:first-child {
             border-left: 1px solid white;
         }
-    }   
+    }
+    
+    .active {
+        border-bottom: 5px solid (colors.$c-primary);
+        margin-bottom: -10px;
+    }
 }
